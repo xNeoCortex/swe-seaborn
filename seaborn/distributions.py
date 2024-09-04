@@ -1362,8 +1362,9 @@ def histplot(
     # Histogram computation parameters
     stat="count", bins="auto", binwidth=None, binrange=None,
     discrete=None, cumulative=False, common_bins=True, common_norm=True,
-    # Histogram appearance parameters
+    # Engine
     engine="seaborn",
+    # Histogram appearance parameters
     multiple="layer", element="bars", fill=True, shrink=1,
     # Histogram smoothing with a kernel density estimate
     kde=False, kde_kws=None, line_kws=None,
@@ -1408,6 +1409,7 @@ def histplot(
         bins=bins,
         binwidth=binwidth,
         binrange=binrange,
+        engine=engine,
         discrete=discrete,
         engine=engine,
         cumulative=cumulative,
